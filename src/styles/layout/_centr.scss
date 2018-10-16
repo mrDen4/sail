@@ -1,0 +1,68 @@
+.centr {
+
+    .centr__container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .centr__title {
+        font-size: 36px;
+        text-transform: uppercase;
+    }
+
+    .centr__text {
+        max-width: 750px;
+        text-align: center;
+    }
+
+    .centr__list {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        color: #ffffff;
+
+        .centr__item {
+            width: 30%;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: url('../images/centr-item.png') center center no-repeat;
+            margin-top: 50px;
+
+            .item__title {
+                font-size: 36px;
+                text-transform: uppercase;
+                margin: 0;
+            }
+
+            .item__text {
+                max-width: 250px;
+                text-align: center;
+            }
+
+            .item__link {
+                color: #ffffff;
+                display: flex;
+                transition: .3s;
+
+                &:hover {
+                    color: $blue;
+
+                    .link__arrow {
+                        transform: rotate(360deg);
+                    }
+                }
+
+                .link__arrow {
+                    background: url('../images/arrow.png') center center no-repeat;
+                    width: 40px;
+                    margin-left: 10px;
+                    transition: .5s;
+                }
+            }
+        }
+    }
+}
