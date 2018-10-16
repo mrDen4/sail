@@ -301,3 +301,52 @@ ul {
         font-size: 24px;
         text-align: center;
         z-index: 10; }
+
+.callback {
+  background: url("../images/callback-bg.png") center center no-repeat;
+  background-size: cover; }
+  .callback .callback__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center; }
+  .callback .callback__title {
+    margin: 0;
+    margin-bottom: 50px;
+    font-size: 48px;
+    line-height: 68px;
+    text-align: center; }
+    .callback .callback__title .color {
+      color: #00B6E4; }
+  .callback .callback__text {
+    font-size: 24px;
+    line-height: 36px;
+    font-style: bold; }
+  .callback .callback__form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%; }
+    .callback .callback__form .form__inp {
+      width: 30%;
+      background: none;
+      padding: 12px;
+      color: #ffffff;
+      border: 1px solid #ffffff;
+      border-radius: 4px; }
+    .callback .callback__form .form__btn {
+      width: 30%;
+      background: #00B6E4;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+      padding: 12px;
+      color: #ffffff;
+      text-transform: uppercase;
+      transition: .3s; }
+      .callback .callback__form .form__btn:hover {
+        background: #4bdbff; }
+  .callback .callback__star {
+    font-size: 12px;
+    text-align: left; }
