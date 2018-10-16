@@ -1,0 +1,88 @@
+.type {
+    background: #E5E5E5;
+
+    .type__container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .type__title {
+        text-align: center;
+        font-size: 36px;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+
+    .type__content {
+        display: flex;
+        width: 100%;
+
+        .type__nav {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+
+            .nav__item {
+                font-size: 24px;
+                color: rgba(0, 0, 0, 0.5);
+                margin-bottom: 25px;
+                cursor: pointer;
+                transition: .3s;
+
+                &--active {
+                    color: $blue;
+                    text-decoration: underline;
+                }
+
+                &:hover {
+                    color: $blue;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .type__all {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+
+            .all__item {
+                width: 23%;
+                height: 195px;
+                margin-bottom: 35px;
+            }
+
+            .item__link {
+                width: 100%;
+                height: 100%;
+                color: #ffffff;
+                display: flex;
+                align-items: center;
+                justify-content: center;    
+                text-decoration: none;
+                transition: .3s;
+                position: relative;
+
+                &:hover {
+                    color: $blue;
+                    opacity: .9;
+                }
+            }
+
+            .link__img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+
+            .item__text {
+                max-width: 150px;
+                font-size: 24px;
+                text-align: center;
+                z-index: 10;
+            }
+        }
+    }
+}
