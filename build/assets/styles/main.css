@@ -134,13 +134,15 @@ ul {
     left: 10px;
     background: url("../images/arrow-l.png") center center no-repeat;
     width: 45px;
-    height: 45px; }
+    height: 45px;
+    cursor: pointer; }
   .hero .hero__arrow-r {
     position: absolute;
     right: 10px;
     background: url("../images/arrow-r.png") center center no-repeat;
     width: 45px;
-    height: 45px; }
+    height: 45px;
+    cursor: pointer; }
   .hero .hero__slider {
     width: 100%; }
     .hero .hero__slider .hero__slide {
@@ -194,7 +196,8 @@ ul {
           margin-right: 15px; }
 
 .centr {
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  padding-top: 100px; }
   .centr .centr__container {
     align-items: center;
     justify-content: center; }
