@@ -37,7 +37,8 @@ ul {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 100%; }
+    width: 100%;
+    padding-top: 30px; }
   .header .header__logo {
     width: 225px;
     height: 38px;
@@ -128,7 +129,66 @@ ul {
     align-items: center;
     justify-content: center;
     min-height: 100vh; }
+  .hero .hero__arrow-l {
+    position: absolute;
+    left: 10px;
+    background: url("../images/arrow-l.png") center center no-repeat;
+    width: 45px;
+    height: 45px; }
+  .hero .hero__arrow-r {
+    position: absolute;
+    right: 10px;
+    background: url("../images/arrow-r.png") center center no-repeat;
+    width: 45px;
+    height: 45px; }
   .hero .hero__slider {
     width: 100%; }
     .hero .hero__slider .hero__slide {
+      display: flex;
+      justify-content: space-between;
+      color: #ffffff;
+      height: 60vh; }
+      .hero .hero__slider .hero__slide .slide__title {
+        font-size: 72px;
+        margin: 0; }
+    .hero .hero__slider .slide__left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%; }
+    .hero .hero__slider .slide__text--about {
+      max-width: 400px; }
+    .hero .hero__slider .slide__btn {
+      background: #00B6E4;
+      color: #ffffff;
+      width: 270px;
+      height: 50px;
+      border: none;
+      cursor: pointer;
+      transition: .3s; }
+      .hero .hero__slider .slide__btn:hover {
+        background: #4bdbff; }
+    .hero .hero__slider .slide__nav {
       display: flex; }
+      .hero .hero__slider .slide__nav .nav__item {
+        margin-right: 10px; }
+        .hero .hero__slider .slide__nav .nav__item:last-child {
+          margin-right: 0; }
+        .hero .hero__slider .slide__nav .nav__item--active {
+          color: #00B6E4;
+          text-decoration: underline; }
+    .hero .hero__slider .slide__right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .hero .hero__slider .slide__right .slide__list .list__item {
+        display: flex; }
+        .hero .hero__slider .slide__right .slide__list .list__item::before {
+          content: '';
+          width: 15px;
+          height: 15px;
+          background: url("../images/li.png");
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 15px; }

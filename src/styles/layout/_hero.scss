@@ -1,0 +1,110 @@
+.hero {
+    min-height: 100vh;
+    width: 100vw;
+    background: url('../images/hero-bg.png') center center no-repeat;
+    background-size: cover;
+
+    .hero__container {
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    .hero__arrow-l {
+        position: absolute;
+        left: 10px;
+        background: url('../images/arrow-l.png') center center no-repeat;
+        width: 45px;
+        height: 45px;
+    }
+
+    .hero__arrow-r {
+        position: absolute;
+        right: 10px;
+        background: url('../images/arrow-r.png') center center no-repeat;
+        width: 45px;
+        height: 45px;
+    }
+
+    .hero__slider {
+        width: 100%;
+
+        .hero__slide {
+            display: flex;
+            justify-content: space-between;
+            color: #ffffff;
+            height: 60vh;
+
+            .slide__title {
+                font-size: 72px;
+                margin: 0;
+            }
+        }
+
+        .slide__left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .slide__text--about {
+            max-width: 400px;
+        }
+
+        .slide__btn {
+            background: $blue;
+            color: #ffffff;
+            width: 270px;
+            height: 50px;
+            border: none;
+            cursor: pointer;
+            transition: .3s;
+
+            &:hover {
+                background: lighten($color: $blue, $amount: 20);
+            }
+        }
+
+        .slide__nav {
+            display: flex;
+
+            .nav__item {
+                margin-right: 10px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+                
+                &--active {
+                    color: $blue;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .slide__right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .slide__list {
+
+                .list__item {
+                    display: flex;
+
+                    &::before {
+                        content: '';
+                        width: 15px;
+                        height: 15px;
+                        background: url('../images/li.png');
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
