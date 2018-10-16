@@ -181,9 +181,9 @@ ul {
       display: flex;
       flex-direction: column;
       justify-content: center; }
-      .hero .hero__slider .slide__right .slide__list .list__item {
+      .hero .hero__slider .slide__right .slide__list .list__item, .hero .hero__slider .slide__right .slide__list .footer .nav__menu .menu__list .menu__item, .footer .nav__menu .menu__list .hero .hero__slider .slide__right .slide__list .menu__item, .hero .hero__slider .slide__right .slide__list .footer .nav__contacts .contacts__list .contacts__item, .footer .nav__contacts .contacts__list .hero .hero__slider .slide__right .slide__list .contacts__item {
         display: flex; }
-        .hero .hero__slider .slide__right .slide__list .list__item::before {
+        .hero .hero__slider .slide__right .slide__list .list__item::before, .hero .hero__slider .slide__right .slide__list .footer .nav__menu .menu__list .menu__item::before, .footer .nav__menu .menu__list .hero .hero__slider .slide__right .slide__list .menu__item::before, .hero .hero__slider .slide__right .slide__list .footer .nav__contacts .contacts__list .contacts__item::before, .footer .nav__contacts .contacts__list .hero .hero__slider .slide__right .slide__list .contacts__item::before {
           content: '';
           width: 15px;
           height: 15px;
@@ -245,7 +245,7 @@ ul {
   .type .type__container {
     padding-top: 100px;
     padding-bottom: 100px; }
-  .type .type__title {
+  .type .type__title, .type .footer .nav__menu .menu__title, .footer .nav__menu .type .menu__title, .type .footer .nav__contacts .contacts__title, .footer .nav__contacts .type .contacts__title {
     text-align: center;
     font-size: 36px;
     margin: 0;
@@ -350,3 +350,76 @@ ul {
   .callback .callback__star {
     font-size: 12px;
     text-align: left; }
+
+.footer {
+  background: #333333; }
+  .footer .footer__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #ffffff; }
+  .footer .footer__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .footer .nav__type, .footer .nav__menu, .footer .nav__contacts {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    align-items: center;
+    justify-content: space-between; }
+  .footer .type__title, .footer .nav__menu .menu__title, .footer .nav__contacts .contacts__title {
+    font-size: 36px;
+    line-height: 42px; }
+  .footer .type__list, .footer .nav__menu .menu__list, .footer .nav__contacts .contacts__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .footer .type__list .list__item, .footer .nav__menu .menu__list .list__item, .footer .nav__contacts .contacts__list .list__item, .footer .nav__menu .menu__list .menu__item, .footer .nav__contacts .contacts__list .contacts__item {
+      margin-bottom: 10px; }
+    .footer .type__list .item__link, .footer .nav__menu .menu__list .item__link, .footer .nav__contacts .contacts__list .item__link {
+      color: #ffffff;
+      text-decoration: none;
+      transition: .3s;
+      font-size: 24px;
+      text-transform: uppercase; }
+      .footer .type__list .item__link:hover, .footer .nav__menu .menu__list .item__link:hover, .footer .nav__contacts .contacts__list .item__link:hover {
+        text-decoration: underline;
+        color: #00B6E4; }
+  .footer .nav__menu .menu__list .item__link {
+    text-transform: none; }
+  .footer .nav__contacts .contacts__list {
+    width: 100%; }
+    .footer .nav__contacts .contacts__list .contacts__item {
+      width: 100%;
+      text-align: center; }
+      .footer .nav__contacts .contacts__list .contacts__item .item__btn {
+        color: #000000;
+        border: none;
+        background: #ffffff;
+        height: 50px;
+        width: 100%;
+        cursor: pointer;
+        transition: .3s; }
+        .footer .nav__contacts .contacts__list .contacts__item .item__btn:hover {
+          background: #00B6E4;
+          color: #ffffff; }
+    .footer .nav__contacts .contacts__list .contacts__item {
+      text-transform: none; }
+  .footer .footer__copy {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px; }
+    .footer .footer__copy .footer__text {
+      text-transform: uppercase;
+      color: #ffffff; }
+    .footer .footer__copy .footer__rp {
+      color: #ffffff;
+      text-decoration: none;
+      transition: .3s;
+      display: flex; }
+      .footer .footer__copy .footer__rp .rp__text {
+        margin-right: 30px; }
+      .footer .footer__copy .footer__rp:hover {
+        color: #00B6E4; }

@@ -1,0 +1,137 @@
+.footer {
+    background: #333333;
+
+    .footer__container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        color: #ffffff;
+    }
+
+    .footer__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav__type {
+        display: flex;
+        flex-direction: column;
+        height: 350px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .type__title {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .type__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .list__item {
+            margin-bottom: 10px;
+        }
+
+        .item__link {
+            color: #ffffff;
+            text-decoration: none;
+            transition: .3s;
+            font-size: 24px;
+            text-transform: uppercase;
+
+            &:hover {
+                text-decoration: underline;
+                color: $blue;
+            }
+        }
+    }
+
+    .nav__menu {
+        @extend .nav__type;
+
+        .menu__title {
+            @extend .type__title;
+        }
+
+        .menu__list {
+            @extend .type__list;
+
+            .menu__item {
+                @extend .list__item;
+            }
+
+            .item__link {
+                text-transform: none;
+            }
+        }
+    }
+
+    .nav__contacts {
+        @extend .nav__type;
+
+        .contacts__title {
+            @extend .type__title;
+        }
+
+        .contacts__list {
+            @extend .type__list;
+            width: 100%;
+
+            .contacts__item {
+                @extend .list__item;
+                width: 100%;
+                text-align: center;
+
+                .item__btn {
+                    color: #000000;
+                    border: none;
+                    background: #ffffff;
+                    height: 50px;
+                    width: 100%;
+                    cursor: pointer;
+                    transition: .3s;
+
+                    &:hover {
+                        background: $blue;
+                        color: #ffffff;
+                    }
+                }
+            }
+
+            .contacts__item {
+                text-transform: none;
+            }
+        }
+    }
+
+    .footer__copy {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 50px;
+
+        .footer__text {
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+
+        .footer__rp {
+            color: #ffffff;
+            text-decoration: none;
+            transition: .3s;
+            display: flex;
+
+            .rp__text {
+                margin-right: 30px;
+            }
+
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+}
