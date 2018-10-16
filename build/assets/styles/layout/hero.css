@@ -1,0 +1,13 @@
+.hero {
+  min-height: 100vh;
+  width: 100vw;
+  background: url("../images/hero-bg.png") center center no-repeat;
+  background-size: cover; }
+  .hero .hero__container {
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; }
+  .hero .hero__slider {
+    width: 100%; }
+    .hero .hero__slider .hero__slide {
+      display: flex; }
