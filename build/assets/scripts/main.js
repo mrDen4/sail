@@ -1,3 +1,6 @@
 $(document).ready(function () {
-  console.log('JS work')
+
+  $('.header__menu').on('click', function() {
+    $('.menu').toggleClass('menu--active');
+  });
 });
