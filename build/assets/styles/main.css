@@ -170,7 +170,8 @@ ul {
     background: url("../images/arrow-l.png") center center no-repeat;
     width: 45px;
     height: 45px;
-    cursor: pointer; }
+    cursor: pointer;
+    z-index: 999; }
     @media screen and (max-width: 880px) {
       .hero .hero__arrow-l {
         left: 0; } }
@@ -180,6 +181,7 @@ ul {
     background: url("../images/arrow-r.png") center center no-repeat;
     width: 45px;
     height: 45px;
+    z-index: 999;
     cursor: pointer; }
     @media screen and (max-width: 880px) {
       .hero .hero__arrow-r {
@@ -706,7 +708,8 @@ ul {
   height: 100vh;
   width: 100vw;
   left: 100%;
-  transition: .3s; }
+  transition: .3s;
+  z-index: 9999; }
   @media screen and (max-width: 880px) {
     .menu {
       height: 100%;
