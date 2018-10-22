@@ -24,6 +24,10 @@
         justify-content: space-between;
         color: #ffffff;
 
+        @include tablets() {
+            flex-direction: column;
+        }
+
         .centr__item {
             width: 30%;
             height: 350px;
@@ -33,6 +37,11 @@
             justify-content: center;
             background: url('../images/centr-item.png') center center no-repeat;
             margin-top: 50px;
+
+            
+            @include tablets() {
+                width: 100%;
+            }
 
             .item__title {
                 font-size: 36px;

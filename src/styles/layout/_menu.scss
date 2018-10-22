@@ -7,6 +7,11 @@
     left: 100%;
     transition: .3s;
 
+    @include tablets() {
+        height: 100%;
+        position: absolute;
+    }
+
     &--active {
         left: 0;
     }
@@ -21,6 +26,10 @@
 
         .header__logo {
             margin: 0;
+
+            @include tablets() {
+                margin-bottom: 20px;
+            }
         }
 
         .phone__content {
@@ -55,6 +64,10 @@
             flex-direction: row;
             align-items: center;
             justify-content: space-between; 
+
+            @include tablets() {
+                flex-direction: column;
+            }
         }
 
         .content__item {

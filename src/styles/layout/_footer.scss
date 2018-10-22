@@ -11,6 +11,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @include tablets() {
+            flex-direction: column;
+        }
     }
 
     .nav__type {
@@ -19,6 +23,10 @@
         height: 350px;
         align-items: center;
         justify-content: space-between;
+
+        @include tablets() {
+            height: 300px;
+        }
     }
 
     .type__title {
@@ -114,6 +122,11 @@
         justify-content: space-between;
         margin-top: 50px;
 
+        @include tablets() {
+            flex-direction: column;
+            margin-top: 0;
+        }
+
         .footer__text {
             text-transform: uppercase;
             color: #ffffff;
@@ -125,8 +138,18 @@
             transition: .3s;
             display: flex;
 
+            @include tablets() {
+                flex-direction: column;
+                align-items: center;
+            }
+
             .rp__text {
                 margin-right: 30px;
+
+                @include tablets() {
+                    margin: 0;
+                    margin-bottom: 10px;
+                }
             }
 
             &:hover {
