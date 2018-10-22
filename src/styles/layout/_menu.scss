@@ -47,6 +47,10 @@
         }
 
         .header__menu {
+
+            @include tablets() {
+                right: 5px;
+            }
             .menu__logo {
                 transition: .3s;
 

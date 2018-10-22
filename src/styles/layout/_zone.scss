@@ -1,6 +1,10 @@
 .zone {
     background: #E5E5E5;
     padding-top: 150px;
+
+    @include tablets() {
+        padding-top: 250px;
+    }
     
     .zone__title {
         font-size: 36px;
@@ -15,6 +19,10 @@
         flex-wrap: wrap;
         width: 100%;
 
+        @include tablets() {
+            justify-content: space-between;
+        }
+
         .zone__item {
             width: 22%;
             height: 268px;
@@ -26,6 +34,12 @@
             align-items: center;
             justify-content: center;
             padding: 60px;
+
+            @include tablets() {
+                width: 45%;
+                margin-right: 0;
+                height: 100px;
+            }
 
             &:nth-child(4n) {
                 margin-right: 0;
@@ -58,6 +72,10 @@
                 z-index: 10;
                 color: #ffffff;
                 text-align: center;
+
+                @include tablets() {
+                    font-size: 20px;
+                }
             }
         }
     }
