@@ -26,6 +26,7 @@
             margin-right: 0;
             margin-bottom: 20px;
             margin-top: 20px;
+            width: 300px;
         }
     }
     
@@ -37,6 +38,7 @@
         @include tablets() {
             margin-right: 0;
             order: 2;
+            width: 300px;
         }
 
         .phone__logo {
@@ -96,6 +98,7 @@
             margin-right: 0;
             padding: 0;
             margin-bottom: 20px;
+            width: 300px;
         }
 
         &:hover {

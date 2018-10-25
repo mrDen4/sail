@@ -56,7 +56,8 @@ ul {
       .header .header__logo {
         margin-right: 0;
         margin-bottom: 20px;
-        margin-top: 20px; } }
+        margin-top: 20px;
+        width: 300px; } }
   .header .header__phone {
     display: flex;
     align-items: center;
@@ -64,7 +65,8 @@ ul {
     @media screen and (max-width: 880px) {
       .header .header__phone {
         margin-right: 0;
-        order: 2; } }
+        order: 2;
+        width: 300px; } }
     .header .header__phone .phone__logo {
       width: 45px;
       height: 45px;
@@ -108,7 +110,8 @@ ul {
       .header .header__location {
         margin-right: 0;
         padding: 0;
-        margin-bottom: 20px; } }
+        margin-bottom: 20px;
+        width: 300px; } }
     .header .header__location:hover .location__text {
       color: #00B6E4; }
     .header .header__location .location__logo {
@@ -176,7 +179,8 @@ ul {
     width: 45px;
     height: 45px;
     cursor: pointer;
-    z-index: 999; }
+    z-index: 999;
+    display: flex; }
     @media screen and (max-width: 880px) {
       .hero .hero__arrow-l {
         left: 0; } }
@@ -187,7 +191,8 @@ ul {
     width: 45px;
     height: 45px;
     z-index: 999;
-    cursor: pointer; }
+    cursor: pointer;
+    display: flex; }
     @media screen and (max-width: 880px) {
       .hero .hero__arrow-r {
         right: 0; } }
@@ -197,12 +202,14 @@ ul {
       display: flex;
       justify-content: space-between;
       color: #ffffff;
-      height: 60vh; }
+      height: 60vh;
+      padding: 0 50px; }
       @media screen and (max-width: 880px) {
         .hero .hero__slider .hero__slide {
           flex-direction: column;
           height: 100%;
-          padding: 0 40px; } }
+          padding: 0 40px;
+          align-items: center; } }
       .hero .hero__slider .hero__slide .slide__title {
         font-size: 72px;
         margin: 0; }
@@ -215,6 +222,10 @@ ul {
       flex-direction: column;
       justify-content: space-between;
       height: 100%; }
+      @media screen and (max-width: 880px) {
+        .hero .hero__slider .slide__left {
+          width: 100%;
+          align-items: center; } }
     .hero .hero__slider .slide__text--about {
       max-width: 400px; }
     .hero .hero__slider .slide__btn {
@@ -247,6 +258,10 @@ ul {
       display: flex;
       flex-direction: column;
       justify-content: center; }
+      @media screen and (max-width: 880px) {
+        .hero .hero__slider .slide__right {
+          width: 100%;
+          align-items: center; } }
       .hero .hero__slider .slide__right .slide__list .list__item, .hero .hero__slider .slide__right .slide__list .footer .nav__menu .menu__list .menu__item, .footer .nav__menu .menu__list .hero .hero__slider .slide__right .slide__list .menu__item, .hero .hero__slider .slide__right .slide__list .footer .nav__contacts .contacts__list .contacts__item, .footer .nav__contacts .contacts__list .hero .hero__slider .slide__right .slide__list .contacts__item {
         display: flex; }
         .hero .hero__slider .slide__right .slide__list .list__item::before, .hero .hero__slider .slide__right .slide__list .footer .nav__menu .menu__list .menu__item::before, .footer .nav__menu .menu__list .hero .hero__slider .slide__right .slide__list .menu__item::before, .hero .hero__slider .slide__right .slide__list .footer .nav__contacts .contacts__list .contacts__item::before, .footer .nav__contacts .contacts__list .hero .hero__slider .slide__right .slide__list .contacts__item::before {
@@ -295,7 +310,8 @@ ul {
       .centr .centr__list .centr__item .item__title {
         font-size: 36px;
         text-transform: uppercase;
-        margin: 0; }
+        margin: 0;
+        text-align: center; }
       .centr .centr__list .centr__item .item__text {
         max-width: 250px;
         text-align: center; }
@@ -332,7 +348,8 @@ ul {
     .type .type__content .type__nav {
       display: flex;
       flex-direction: column;
-      width: 20%; }
+      width: 20%;
+      margin-right: 20px; }
       @media screen and (max-width: 880px) {
         .type .type__content .type__nav {
           width: 100%;
@@ -735,9 +752,10 @@ ul {
     color: #333333; }
   @media screen and (max-width: 880px) {
     .menu .header--menu .header__menu {
-      right: 5px; } }
+      right: 20px; } }
   .menu .header--menu .header__menu .menu__logo {
-    transition: .3s; }
+    transition: .3s;
+    margin: 0; }
     .menu .header--menu .header__menu .menu__logo:hover {
       transform: rotate(360deg); }
   .menu .menu__content {

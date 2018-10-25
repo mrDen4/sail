@@ -23,6 +23,7 @@
         height: 45px;
         cursor: pointer;
         z-index: 999;
+        display: flex;
 
         @include tablets() {
             left: 0;
@@ -37,6 +38,7 @@
         height: 45px;
         z-index: 999;
         cursor: pointer;
+        display: flex;
 
         @include tablets() {
             right: 0;
@@ -51,11 +53,13 @@
             justify-content: space-between;
             color: #ffffff;
             height: 60vh;
+            padding: 0 50px;
 
             @include tablets() {
                 flex-direction: column;
                 height: 100%;
                 padding: 0 40px;
+                align-items: center;
             }
 
             .slide__title {
@@ -74,6 +78,11 @@
             flex-direction: column;
             justify-content: space-between;
             height: 100%;
+
+            @include tablets() {
+                width: 100%;
+                align-items: center;
+            }
         }
 
         .slide__text--about {
@@ -124,6 +133,11 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+
+            @include tablets() {
+                width: 100%;
+                align-items: center;
+            }
 
             .slide__list {
 
