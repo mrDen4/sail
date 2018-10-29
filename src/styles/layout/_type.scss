@@ -1,6 +1,10 @@
 .type {
     background: #E5E5E5;
 
+    &--page {
+        padding-top: 100px;
+    }
+
     .type__container {
         padding-top: 100px;
         padding-bottom: 100px;

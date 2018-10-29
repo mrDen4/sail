@@ -338,6 +338,8 @@ ul {
 
 .type {
   background: #E5E5E5; }
+  .type--page {
+    padding-top: 100px; }
   .type .type__container {
     padding-top: 100px;
     padding-bottom: 100px; }
