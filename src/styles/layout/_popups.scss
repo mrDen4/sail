@@ -47,22 +47,36 @@
 
         .form__inp {
             width: 80%;
+            background: none;
+            padding: 12px;
+            color: #ffffff;
+            border: 1px solid $blue;
+            border-radius: 4px;
             margin-bottom: 20px;
-            height: 30px;
-            padding: 10px;
+
+            @include tablets() {
+                width: 100%;
+                margin-bottom: 20px;
+            }
         }
 
         .form__btn {
             width: 80%;
-            height: 30px;
             background: $blue;
-            color: #ffffff;
             cursor: pointer;
-            transition: .3s;
             border: none;
+            border-radius: 4px;
+            padding: 12px;
+            color: #ffffff;
+            text-transform: uppercase;
+            transition: .3s;
+
+            @include tablets() {
+                width: 100%;
+            }
 
             &:hover {
-                background: lighten($color: $blue, $amount: 25)
+                background: lighten($color: $blue, $amount: 20);
             }
         }
     }

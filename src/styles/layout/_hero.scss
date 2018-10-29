@@ -154,6 +154,17 @@
                         justify-content: center;
                         margin-right: 15px;
                     }
+
+                    .item__link {
+                        color: #ffffff;
+                        text-decoration: none;
+                        transition: .3s;
+
+                        &:hover {
+                            color: $blue;
+                            text-decoration: underline;
+                        }
+                    }
                 }
             }
         }
