@@ -57,7 +57,11 @@
             justify-content: flex-start;
         }
 
-        @include horizon() {
+        @media screen and (max-width: 631px) { 
+            justify-content: space-between;
+        }
+
+        @include phones() {
             justify-content: space-between;
         }
 
@@ -69,8 +73,8 @@
                 margin-right: 20px;    
             }
 
-            @include horizon() {
-                margin-right: 0;
+            @media screen and (max-width: 631px) { 
+                margin-right: 0;                
             }
         }
     }

@@ -617,12 +617,16 @@ ul {
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 60px; }
+      padding: 60px;
+      overflow: hidden;
+      background: url("../images/service-1.png") center center no-repeat;
+      background-size: cover;
+      transition: .3s; }
       @media screen and (max-width: 880px) {
         .zone .zone__list .zone__item {
           width: 45%;
           margin-right: 0;
-          height: 100px; } }
+          height: 300px; } }
       .zone .zone__list .zone__item:nth-child(4n) {
         margin-right: 0; }
       .zone .zone__list .zone__item .item__link {
@@ -654,7 +658,7 @@ ul {
   padding-top: 150px;
   padding-bottom: 100px;
   background: #E5E5E5; }
-  @media screen and (max-width: 880px) {
+  @media screen and (max-width: 500px) {
     .choise {
       padding-top: 250px; } }
   .choise .choise__container {
@@ -671,7 +675,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between; }
-    @media screen and (max-width: 880px) {
+    @media screen and (max-width: 500px) {
       .choise .choise__list {
         flex-direction: column; } }
     .choise .choise__list .choise__item {
@@ -681,8 +685,13 @@ ul {
       padding: 25px;
       position: relative;
       overflow: hidden;
-      width: 31%; }
+      width: 31%;
+      background: url("../images/service-1.png") center center no-repeat;
+      background-size: cover; }
       @media screen and (max-width: 880px) {
+        .choise .choise__list .choise__item {
+          padding: 10px; } }
+      @media screen and (max-width: 500px) {
         .choise .choise__list .choise__item {
           width: 100%;
           margin-bottom: 20px; } }
@@ -839,7 +848,10 @@ ul {
     @media screen and (max-width: 880px) {
       .service .left__imgs {
         justify-content: flex-start; } }
-    @media screen and (max-width: 678px) {
+    @media screen and (max-width: 631px) {
+      .service .left__imgs {
+        justify-content: space-between; } }
+    @media screen and (max-width: 500px) {
       .service .left__imgs {
         justify-content: space-between; } }
     .service .left__imgs .imgs__img {
@@ -848,7 +860,7 @@ ul {
         .service .left__imgs .imgs__img {
           margin-bottom: 20px;
           margin-right: 20px; } }
-      @media screen and (max-width: 678px) {
+      @media screen and (max-width: 631px) {
         .service .left__imgs .imgs__img {
           margin-right: 0; } }
   .service .about__right {
