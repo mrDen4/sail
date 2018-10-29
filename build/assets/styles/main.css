@@ -453,6 +453,9 @@ ul {
     font-size: 24px;
     line-height: 36px;
     font-style: bold; }
+    @media screen and (max-width: 880px) {
+      .callback .callback__text {
+        text-align: center; } }
   .callback .callback__form {
     display: flex;
     align-items: center;
@@ -471,8 +474,14 @@ ul {
       border-radius: 4px; }
       @media screen and (max-width: 880px) {
         .callback .callback__form .form__inp {
-          width: 100%;
+          width: 50%;
           margin-bottom: 20px; } }
+      @media screen and (max-width: 678px) {
+        .callback .callback__form .form__inp {
+          width: 80%; } }
+      @media screen and (max-width: 500px) {
+        .callback .callback__form .form__inp {
+          width: 100%; } }
     .callback .callback__form .form__btn {
       width: 30%;
       background: #00B6E4;
@@ -484,6 +493,12 @@ ul {
       text-transform: uppercase;
       transition: .3s; }
       @media screen and (max-width: 880px) {
+        .callback .callback__form .form__btn {
+          width: 50%; } }
+      @media screen and (max-width: 678px) {
+        .callback .callback__form .form__btn {
+          width: 80%; } }
+      @media screen and (max-width: 500px) {
         .callback .callback__form .form__btn {
           width: 100%; } }
       .callback .callback__form .form__btn:hover {

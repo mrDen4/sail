@@ -51,6 +51,10 @@
         font-size: 24px;
         line-height: 36px;
         font-style: bold;
+
+        @include tablets() {
+            text-align: center;
+        }
     }
 
     .callback__form {
@@ -73,8 +77,16 @@
             border-radius: 4px;
 
             @include tablets() {
-                width: 100%;
+                width: 50%;
                 margin-bottom: 20px;
+            }
+
+            @include horizon() {
+                width: 80%;
+            }
+
+            @include phones() {
+                width: 100%;
             }
         }
 
@@ -90,6 +102,14 @@
             transition: .3s;
 
             @include tablets() {
+                width: 50%;
+            }
+
+            @include horizon() {
+                width: 80%;
+            }
+
+            @include phones() {
                 width: 100%;
             }
 
