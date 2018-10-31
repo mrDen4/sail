@@ -530,7 +530,7 @@ ul {
     justify-content: flex-start; }
     @media screen and (max-width: 880px) {
       .footer .nav__type, .footer .nav__menu, .footer .nav__contacts {
-        height: 300px; } }
+        min-height: 300px; } }
   .footer .type__title, .footer .nav__menu .menu__title, .footer .nav__contacts .contacts__title {
     font-size: 36px;
     line-height: 42px;
@@ -1028,3 +1028,57 @@ ul {
   left: 0; }
   .bg--active {
     display: initial; }
+
+.about {
+  padding-top: 150px; }
+  @media screen and (max-width: 880px) {
+    .about {
+      padding-top: 250px; } }
+  .about .about__content {
+    display: flex;
+    justify-content: space-around; }
+    @media screen and (max-width: 880px) {
+      .about .about__content {
+        flex-direction: column; } }
+  .about .content__imgs {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    @media screen and (max-width: 880px) {
+      .about .content__imgs {
+        width: 100%;
+        margin-bottom: 30px; } }
+    .about .content__imgs .imgs__large {
+      width: 100%; }
+      .about .content__imgs .imgs__large .large__img {
+        width: 100%; }
+    .about .content__imgs .imgs__small {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .about .content__imgs .imgs__small .small__img {
+        width: 30%; }
+  .about .content__text {
+    width: 48%;
+    display: flex;
+    flex-direction: column; }
+    @media screen and (max-width: 880px) {
+      .about .content__text {
+        width: 100%; } }
+    .about .content__text .text__title {
+      font-size: 36px;
+      margin-bottom: 50px;
+      margin-top: 0; }
+      @media screen and (max-width: 880px) {
+        .about .content__text .text__title {
+          text-align: center; } }
+  .about .about__after {
+    padding-bottom: 100px; }
+    .about .about__after .after__title {
+      font-size: 36px; }
+      @media screen and (max-width: 880px) {
+        .about .about__after .after__title {
+          text-align: center; } }
