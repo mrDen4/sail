@@ -644,7 +644,6 @@ ul {
       justify-content: center;
       padding: 60px;
       overflow: hidden;
-      background: url("../images/service-1.png") center center no-repeat;
       background-size: cover;
       transition: .3s; }
       @media screen and (max-width: 880px) {
