@@ -59,7 +59,7 @@
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            justify-content: space-between;
+            justify-content: flex-start;
             width: 80%;
 
             @include tablets() {
@@ -71,6 +71,7 @@
                 height: 195px;
                 margin-bottom: 35px;
                 position: relative;
+                margin-right: 17px;
 
                 @include tablets() {
                     width: 45%;

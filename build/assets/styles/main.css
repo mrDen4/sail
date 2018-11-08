@@ -379,7 +379,7 @@ ul {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-start;
       width: 80%; }
       @media screen and (max-width: 880px) {
         .type .type__content .type__all {
@@ -388,7 +388,8 @@ ul {
         width: 23%;
         height: 195px;
         margin-bottom: 35px;
-        position: relative; }
+        position: relative;
+        margin-right: 17px; }
         @media screen and (max-width: 880px) {
           .type .type__content .type__all .all__item {
             width: 45%;
@@ -799,7 +800,6 @@ ul {
     padding-top: 150px; }
     .menu .menu__content .content__container {
       flex-direction: row;
-      align-items: center;
       justify-content: space-between; }
       @media screen and (max-width: 880px) {
         .menu .menu__content .content__container {
