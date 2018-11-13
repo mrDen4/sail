@@ -343,6 +343,9 @@ ul {
   .type .type__container {
     padding-top: 150px;
     padding-bottom: 100px; }
+    @media screen and (max-width: 880px) {
+      .type .type__container {
+        padding-top: 300px; } }
   .type .type__title, .type .footer .nav__menu .menu__title, .footer .nav__menu .type .menu__title, .type .footer .nav__contacts .contacts__title, .footer .nav__contacts .type .contacts__title {
     text-align: center;
     font-size: 36px;

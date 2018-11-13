@@ -8,6 +8,10 @@
     .type__container {
         padding-top: 150px;
         padding-bottom: 100px;
+
+        @include tablets() {
+            padding-top: 300px;
+        }
     }
 
     .type__title {
