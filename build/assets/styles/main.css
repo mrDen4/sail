@@ -246,9 +246,15 @@ ul {
       .hero .hero__slider .slide__btn:hover {
         background: #4bdbff; }
     .hero .hero__slider .slide__nav {
-      display: flex; }
+      display: flex;
+      margin-top: 50px; }
       .hero .hero__slider .slide__nav .nav__item {
-        margin-right: 10px; }
+        margin-right: 10px;
+        cursor: pointer;
+        transition: .3s; }
+        .hero .hero__slider .slide__nav .nav__item:hover {
+          color: #00B6E4;
+          text-decoration: underline; }
         .hero .hero__slider .slide__nav .nav__item:last-child {
           margin-right: 0; }
         .hero .hero__slider .slide__nav .nav__item--active {

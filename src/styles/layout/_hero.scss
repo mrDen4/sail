@@ -114,9 +114,17 @@
 
         .slide__nav {
             display: flex;
+            margin-top: 50px;
 
             .nav__item {
                 margin-right: 10px;
+                cursor: pointer;
+                transition: .3s;
+
+                &:hover {
+                    color: $blue;
+                    text-decoration: underline;
+                }
 
                 &:last-child {
                     margin-right: 0;
