@@ -1088,3 +1088,49 @@ ul {
       @media screen and (max-width: 880px) {
         .about .about__after .after__title {
           text-align: center; } }
+
+.contacts {
+  width: 100%;
+  height: 760px;
+  position: relative; }
+  @media screen and (max-width: 880px) {
+    .contacts {
+      height: 1400px; } }
+  .contacts .contacts__list {
+    display: flex;
+    position: absolute;
+    top: 25%;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%; }
+    @media screen and (max-width: 880px) {
+      .contacts .contacts__list {
+        flex-direction: column;
+        top: 50px; } }
+    .contacts .contacts__list .list__item, .contacts .contacts__list .footer .nav__menu .menu__list .menu__item, .footer .nav__menu .menu__list .contacts .contacts__list .menu__item, .contacts .footer .nav__contacts .contacts__list .contacts__item, .footer .nav__contacts .contacts .contacts__list .contacts__item {
+      background: #ffffff;
+      padding: 30px 40px;
+      min-height: 400px;
+      width: 370px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      @media screen and (max-width: 880px) {
+        .contacts .contacts__list .list__item, .contacts .contacts__list .footer .nav__menu .menu__list .menu__item, .footer .nav__menu .menu__list .contacts .contacts__list .menu__item, .contacts .footer .nav__contacts .contacts__list .contacts__item, .footer .nav__contacts .contacts .contacts__list .contacts__item {
+          margin-bottom: 20px; } }
+    .contacts .contacts__list .links__item {
+      display: flex;
+      margin-bottom: 15px;
+      align-items: center; }
+      .contacts .contacts__list .links__item .item__link {
+        color: #000000;
+        text-decoration: none;
+        margin-left: 10px;
+        transition: .3s; }
+        .contacts .contacts__list .links__item .item__link:hover {
+          color: #00B6E4; }
+    .contacts .contacts__list .item__link {
+      color: #00B6E4; }
+    .contacts .contacts__list .item__title {
+      color: #00B6E4;
+      font-size: 24px; }
